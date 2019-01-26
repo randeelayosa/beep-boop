@@ -111,7 +111,8 @@ rangeNumbers.replace(1,6)
 
 //trying a different approach to if statements by putting it in the interface logic portion
 $(document).ready(function() {
-  var count = parseInt($(#userInput));
+  $(#form).submit(function(event))
+
 
   if (count <= 9) {
     single.forEach(function(item, index) {
@@ -119,4 +120,5 @@ $(document).ready(function() {
     }, ["Beep!", "Boop!", "Sorry"]);
   }
 
+  event.preventDefault();
 });
