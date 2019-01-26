@@ -20,7 +20,7 @@ _A program created with JavaScript and HTML where a user can submit a number and
 
 ## Setup/Installation Requirements
 
-* _Go to this link to view the page on GitHub "https://github.com/randeelayosa/{repo name}.git"_
+* _Go to this link to view the page on GitHub "https://github.com/randeelayosa/beep-boop.git"_
 * _Clone and open the repository in the text editor of your preference. (i.e. Atom.)_
 * _Open the index.html in the web browser fo your preference and open the pages console through the Inspector tool_
 * _Run the JavaScript code in the console._
