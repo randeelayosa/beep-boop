@@ -1,7 +1,11 @@
+//furthest I could manage to get // in console
 var start = 0;
-var number1 = ["1"];
-var number2 = "2";
-var number3 = "3";
+var replaceNumberOne = ["1"];
+var replaceNumberTwo = ["2"];
+var replaceNumberThree = ["3"];
+var containsOne = [1,10,11,12,13,14,15,16,17,18,19,100];
+var singles = [1,2,3];
+
 
 function range(start,end) {
   var rangeNumbers = [];
@@ -10,54 +14,87 @@ function range(start,end) {
   }
   return rangeNumbers;
 }
-console.log(range(start,10));
+console.log(range(start,9));
 
-  var numbers = range(start,10);
+  var numbers = range(start,9);
     console.log(numbers)
   var numString = numbers.toString();
     console.log(numString)
   var numSplit = numString.split();
     console.log(numSplit)
 
-    numSplit.map(function(number1) {
-      return number1.replace(/[1]/gi, "Beep!");
+
+    var hasOne = numSplit.map(function(replaceNumberOne) {
+      return replaceNumberOne.replace(/[1]/g, "Beep!");
+    });
+    console.log(hasOne)
+    document.write(hasOne);
+    var hasTwo = numSplit.map(function(replaceNumberTwo) {
+      return replaceNumberTwo.replace(/[2]/g, "Boop!");
+    });
+    console.log(hasTwo)
+    document.write(hasTwo);
+    var hasThree = numSplit.map(function(replaceNumberThree) {
+      return replaceNumberThree.replace(/[3]/g, "I'm sorry, Dave. I'm afraid I can't do that.");
+    });
+    console.log(hasThree)
+    document.write(hasTwo);
+
+
+
+
+
+
+
+//trying out if statements to try and solve the problem by breaking up the numbers by how many digits are in each.
+    if (numSplit.length <= 9) {
+    numSplit.map(function(replaceNumberOne) {
+      return replaceNumberOne.replace(/[1]/g, "Beep!");
+    });
+    });
+    if (numSplit.length <= 9) {
+    numSplit.map(function(replaceNumberTwo) {
+      return replaceNumberTwo.replace(/[2]/g, "Boop!");
+    });
+
+    if (numSplit.length <= 9) {
+    numSplit.map(function(replaceNumberThree) {
+      return replaceNumberThree.replace(/[3]/g, "I'm sorry, Dave. I'm afraid I can't do that.");
     });
 
 
 
+//trying to see what happens if I address the indexes directly
+    singles.forEach(function(item, index) {
+      console.log(this[index]);
+    }, ["Beep!", "Boop!", "Sorry"]);
+
+
+
+//trying to incorporte a boolean like Lina had mentioned in class during a ticket
+    var isThereA1 = numSplit.includes("1");
+    if (isThereA1 === true) {
+      numSplit.map(function(two) {
+          var new2 = two.replace(/[2]/g, "Boop!");
+        });
+    }
+    console.log(new2)
+
 function string() {
+  var rangeNumbers = [1,2,3,4,5]
   var str = rangeNumbers.toString();
   var replaceThese = [1,2,3]
   var number1 = replaceThese.includes(1);
 
   if (number1 === true) {
-  var x =  rangeNumbers.replace(1,6);
-  alert(x);
+    return "YES";
   }
-
+  console.log(rangeNumbers)
 }
+rangeNumbers.replace(1,6)
 
 
-
-
-
-
-
-
-
-var start = 0;
-var rangeNumbers = [];
-
-function range(start,end) {
-
-  for (let i = start; i <= end; i++) {
-    rangeNumbers.push(i);
-  }
-  return range;
-}
-console.log(range(0,5))
-// document.write(range(start,5));
-
+    //******************
   function string() {
     var string = rangeNumbers.toString();
     var replaceThese = [1,2,3]
@@ -67,68 +104,19 @@ console.log(range(0,5))
     var x =  rangeNumbers.replace(1,6);
     alert(x);
     }
-
-}
-
-
-
-
-
-$(document).ready(function() {
- var start= 0;
- var range = (start,end);
-
- $("#form").submit(function(event) {
- event.preventDefault();
- var userInput = $("#userInput").val();
-
-  function range() {
-  for (let i = start; i <= end; i++) {
-    userInput.push(i);
   }
-}
-// document.write(range(start,5));
 
 
-   $("#count").append(userInput);
 
 
- });
+//trying a different approach to if statements by putting it in the interface logic portion
+$(document).ready(function() {
+  var count = parseInt($(#userInput));
+
+  if (count <= 9) {
+    single.forEach(function(item, index) {
+      console.log(this[index]);
+    }, ["Beep!", "Boop!", "Sorry"]);
+  }
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  REFERENCE
-//
-// $(document).ready(function() {
-//   var multiples = [];
-//   var factorial = 1;
-//
-//
-//   $("#factor-form").submit(function(event) {
-//   event.preventDefault();
-//   var userInput = parseInt($("#factorial").val());
-//
-//   for (var i = userInput; i > 0; i--) {
-//     factorial *= i;
-//   }
-//
-//   $("#result").append(factorial);
-//   $("#result").show();
-//   $("#factor-form").fadeToggle();
-//
-//   console.log(userInput)
-//   console.log(factorial)
-//
-//   });
-// });
