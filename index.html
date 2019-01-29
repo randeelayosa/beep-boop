@@ -5,20 +5,25 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Press+Start+2P" rel="stylesheet">
     <title>Beep Boop</title>
   </head>
   <body>
     <div class="container">
-      <form id="form">
-        <h1>Beep Boop</h1>
-        <div class="form-group">
-          <label for="userInput">Enter a number to count up to.</label>
-          <input id="userInput" class="form-control" type="text" required>
+      <form id="robot">
+        <div class="well-heading">
+          <h1>Beep Boop</h1>
         </div>
-        <button type="submit" name="button">Submit</button>
+        <div class="form-group">
+          <input id="userInput" class="form-control" type="text" placeholder="Enter a number to count up to."required>
+        </div>
+        <button type="submit" name="button">Count!</button>
       </form>
-
-      <p>Let's count! <span class="count"></span></p>
+      <div class="well-count">
+        <h3>Let's count!</h3>
+        <p><span class="count"></span></p>
+        <img src="img/robot.gif" class="robot">
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,58 @@
+img {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  border: solid white 1px;
+  border-radius: 5px;
+  background-color: #d6cdaf;
+  color: white;
+  font-family: 'Major Mono Display', monospace;
+}
+
+input {
+  border: solid gray 1px;
+  border-radius: 5px;
+  font-family: 'Major Mono Display', monospace;
+}
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+  font-style: oblique;
+  font-family: 'Press Start 2P', cursive;
+  color: #d6cdaf;
+}
+
+h3 {
+  display: none;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Major Mono Display', monospace;
+  padding: 30px;
+}
+
+p {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.form-group {
+  margin-top: 100px;
+}
+
+.well-heading {
+  /* border: dashed black 2px;
+  border-radius: 20px; */
+  padding: 30px;
+  margin: 30px;
+  /* background-color: #d6cdaf; */
+}
+
+.well-count {
+  padding: 30px;
+  margin: 30px;
+}
